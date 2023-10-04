@@ -3,24 +3,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="geladeirinha icon" type="png" href="{% static 'images/geladeirinha-logo.png' %}">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{% static 'style/styles.css' %}">
-    <title>CADASTRO GELADEIRINHA</title>
+    <title>Cadastro</title>
 </head>
 <body class="container">
-    <div class="header">
-        <form action="{% url 'cadastro'%}" method="POST">{% csrf_token %}
-            <img class="img" src="{% static 'images/geladeirinha-logo.png' %}" alt="Geladeirinha">
-            <h1>CADASTRO GELADEIRINHA</h1>
-            <div class=" inputs"></div>
-            <input class="input-field" type="text" placeholder="USERNAME..." name="username">
-            <input class="input-field" type="email" placeholder="EMAIL..." name="email">
-            <input class="input-field" type="password" placeholder="SENHA..." name="senha">
-            <input class="button" type="submit" value="CADASTRAR">
+    <div class="form-box">
+        <div> </div>
+        <div> </div>
+        <div> </div>
+        <div> </div>
+        <form action="{% url 'cadastro'%}" method="POST" class="form">{% csrf_token %}
+            <img class="img" src="{% static 'images/geladeirinha-logo.png' %}" alt="Geladeirinha" class="icon">
+            <h1>Cadastre-se</h1>
+            <div class=" inputs">
+                <input class="button" required class="input-field" type="text" placeholder="x..." name="username">
+                <input class="button" required class="input-field" type="email" placeholder="EMAIL..." name="email">
+                <input class="button" required class="input-field" type="password" placeholder="SENHA..." name="senha">
+                <input class="button" type="submit" value="CADASTRAR">
+            </div>
             
         </form>
+        <div> </div>
+        <div> </div>
+        <div> </div>
+        <div> </div>
     </div>
 
 
