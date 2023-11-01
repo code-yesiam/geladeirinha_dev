@@ -11,7 +11,9 @@
     <h1 class="text-body-secondary">Lista de Tarefas</h1>
     <ul>
         {% for todo in todos %}
-        <li>{{todo.Title}}, {{todo.Completed}}, {{todo.Description}}, {{todo.Date}},</li>
+        <li>
+            {{ todo.Title }}, {{ todo.Completed }}, {{ todo.Description }}, {{ todo.Date }},
+            <a href="{% url 'tarefas:confirm-delete' pk=todo.id %}" class="btn btn-danger">Excluir</a>
+        </li>
         {% endfor %}
     </ul>
-</html>

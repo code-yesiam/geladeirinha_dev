@@ -1,10 +1,15 @@
-from django.shortcuts import render, redirect
-from rest_framework import generics
+from django.shortcuts import render, redirect,get_object_or_404
+from rest_framework import generics, status
 from .serializers import *
 from .models import *
 from rest_framework.renderers import TemplateHTMLRenderer
 from rest_framework.response import Response
 from django.contrib import messages
+from rest_framework.views import APIView
+from django.urls import reverse_lazy
+from django.views import View
+from django.http import HttpResponse
+
 
 class ListTodo(generics.ListAPIView):
     queryset = Todo.objects.all()
@@ -42,10 +47,22 @@ class CreateTodo(generics.CreateAPIView):
             return redirect('tarefas:options-html')
         else:
             return render(request, self.template_name, {'serializer': serializer})
-class DeleteTodo(generics.DestroyAPIView):
-    queryset = Todo.objects.all()
-    serializer_class = ToDoSerializer
 
+class DeleteTodo(View):
+    def post(self, request, pk):
+        todo = get_object_or_404(Todo, pk=pk)
+        todo.delete()
+        return redirect('tarefas:list-todo')
+
+class ConfirmDeleteTodo(View):
+    template_name = 'confirm_delete.html'
+
+    def get(self, request, pk):
+        todo = get_object_or_404(Todo, pk=pk)
+        context = {
+            'todo': todo,
+        }
+        return render(request, self.template_name, context)
 
 def options(request):
     return render(request, 'options.html')
