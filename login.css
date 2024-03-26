@@ -1,0 +1,162 @@
+.geladeirinha-icon26 {
+  width: 94px;
+  position: relative;
+  height: 64px;
+  object-fit: contain;
+}
+.geladeirinha-icon-container {
+  width: 400px;
+  border-radius: 0 0 var(--br-xl) var(--br-xl);
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-base) 0;
+  box-sizing: border-box;
+  min-width: 400px;
+}
+.bem-vindo-de-volta {
+  font-size: var(--font-size-21xl);
+}
+.bem-vindo-de-volta,
+.entre-na-sua {
+  align-self: stretch;
+  position: relative;
+}
+.entrar3 {
+  flex: 1;
+  position: relative;
+}
+.entrar-group {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-31xl);
+  box-sizing: border-box;
+  gap: var(--gap-11xl);
+  min-width: 450px;
+}
+.frame-input,
+.frame-parent11 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-input {
+  border: 0;
+  outline: 0;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-xs);
+  background-color: var(--color-gainsboro-300);
+  align-self: stretch;
+  border-radius: var(--br-xl);
+  flex-direction: row;
+  padding: var(--padding-xs) var(--padding-base);
+  color: var(--color-black);
+}
+.frame-parent11 {
+  width: 100%;
+  flex-direction: column;
+  gap: var(--gap-3xs);
+  max-width: 450px;
+}
+.j-possui-uma1 {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-xs);
+}
+.boto-entrar1 {
+  text-decoration: none;
+  flex: 1;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-darkslategray-200);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-5xs) 0;
+  color: inherit;
+}
+.image-22-icon1 {
+  flex: 1;
+  position: relative;
+  max-width: 20px;
+  overflow: hidden;
+  height: 19px;
+  object-fit: cover;
+  max-height: 20px;
+}
+.entrar-com-o1 {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-base);
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: center;
+}
+.boto-entrar-group,
+.image-22-group {
+  border-radius: var(--br-5xs);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+.image-22-group {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-5xs) var(--padding-5xl);
+  background-color: var(--color-darkslategray-200);
+  flex: 1;
+}
+.boto-entrar-group {
+  align-self: stretch;
+  gap: var(--gap-3xs);
+  font-size: var(--font-size-base);
+}
+.login2 {
+  width: 100%;
+  border-radius: var(--br-13xl);
+  background: linear-gradient(151.08deg, #000, #232323);
+  justify-content: center;
+  padding: var(--padding-13xl);
+  box-sizing: border-box;
+  gap: var(--gap-13xl);
+  min-width: 400px;
+  max-width: 600px;
+  min-height: 500px;
+  max-height: 500px;
+}
+.login-container,
+.login1,
+.login2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-container {
+  align-self: stretch;
+  height: 888px;
+  justify-content: center;
+}
+.login1 {
+  width: 100%;
+  position: relative;
+  height: 1024px;
+  overflow: hidden;
+  justify-content: flex-start;
+  gap: var(--gap-17xl);
+  background-image: url(./public/registro@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
