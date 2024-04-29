@@ -21,34 +21,35 @@ body {
   --font-size-5xl: 24px;
 
   /* Colors */
-  --color-white: #fff;
+  --white: #fff;
   --color-black: #000;
   --color-dimgray-100: #6d6d6d;
   --color-dimgray-200: #666;
   --color-dimgray-300: #616161;
   --color-dimgray-400: #565656;
-  --color-tomato-100: #ff4d4d;
-  --color-tomato-200: #ff3636;
-  --color-tomato-300: rgba(255, 54, 54, 0.25);
-  --color-goldenrod: #ffc452;
+  --exclusion: #ff4d4d;
+  --week-routine: #ff3636;
+  --addition: #ffc452;
+  --help: #42ff77;
+  --user-1: #36ff87;
+  --trade: #3a85f5;
   --color-gainsboro-100: #e8e8e8;
   --color-gainsboro-200: #e4e4e4;
   --color-gainsboro-300: #d9d9d9;
+  --buttons: #232323;
+  --color-gray-100: rgba(0, 0, 0, 0.75);
+  --color-gray-200: rgba(255, 255, 255, 0.4);
   --color-darkslategray-100: #4a4a4a;
   --color-darkslategray-200: #353535;
   --color-darkslategray-300: rgba(65, 65, 65, 0.5);
   --color-lightgray-100: #d3d3d3;
   --color-lightgray-200: #ccc;
-  --color-gray-100: #949494;
-  --color-gray-200: rgba(0, 0, 0, 0.75);
-  --color-gray-300: rgba(255, 255, 255, 0.4);
+  --supermarket: #ffeb36;
+  --work-priorities: #5eff36;
   --color-silver-100: #c8c8c8;
   --color-silver-200: #c7c7c7;
-  --color-silver-300: #bebebe;
-  --color-gold-100: #ffeb36;
-  --color-gold-200: rgba(255, 235, 54, 0.25);
-  --color-lawngreen-100: #5eff36;
-  --color-lawngreen-200: rgba(94, 255, 54, 0.25);
+  --user-3: #9a36ff;
+  --user-2: #3662ff;
   --color-darkgray: #979797;
 
   /* Gaps */
@@ -60,7 +61,6 @@ body {
   --gap-11xl: 30px;
   --gap-base: 16px;
   --gap-5xl: 24px;
-  --gap-7xs: 6px;
   --gap-16xl-8: 35.8px;
 
   /* Paddings */
@@ -84,7 +84,5 @@ body {
   --br-13xl: 32px;
   --br-5xs: 8px;
   --br-xl: 20px;
-  --br-8xs: 5px;
   --br-11xs: 2px;
-  --br-9xs: 4px;
 }
